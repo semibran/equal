@@ -1,4 +1,4 @@
-# equal
+# equivalence
 > Determine if two values are deeply equivalent
 
 ```js
@@ -11,8 +11,8 @@ false
 
 ## install
 ```sh
-npm install semibran/equal
+npm install equivalence
 ```
 
 ## license
-MIT
+[MIT](https://opensource.org/licenses/MIT) © [Brandon Semilla](https://git.io/semibran)

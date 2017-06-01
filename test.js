@@ -1,36 +1,36 @@
+const format = require('test-format')
 const equal = require('./')
-const success = String.fromCharCode(0x2714)
-const failure = String.fromCharCode(0x2716)
-
-var tests = {
-	'numbers': {
-		expect: true,
-		actual: equal(0, 0)
+const tests = [
+	{
+		name: 'numbers',
+		expected: false,
+		result: equal(3, 42)
 	},
-	'strings': {
-		expect: false,
-		actual: equal('hello', 'world')
+	{
+		name: 'strings',
+		expected: false,
+		result: equal('hello', 'world')
 	},
-	'NaN': {
-		expect: true,
-		actual: equal(NaN, NaN)
+	{
+		name: 'NaN',
+		expected: true,
+		result: equal(NaN, NaN)
 	},
-	'arrays': {
-		expect: true,
-		actual: equal(['foo', 'bar', 'baz'], ['foo', 'bar', 'baz'])
+	{
+		name: 'arrays',
+		expected: false,
+		result: equal(['foo', 'bar'], ['foo', 'bar', 'baz'])
 	},
-	'objects': {
-		expect: true,
-		actual: equal({ foo: 'bar' }, { foo: 'bar' })
+	{
+		name: 'objects',
+		expected: true,
+		result: equal({ foo: [1, 2, 3] }, { foo: [1, 2, 3] })
 	},
-	'dates': {
-		expect: false,
-		actual: equal(new Date(0), new Date(1))
+	{
+		name: 'dates',
+		expected: false,
+		result: equal(new Date(0), new Date(1))
 	}
-}
+]
 
-for (var id in tests) {
-	var test = tests[id]
-	var char = equal(test.expect, test.actual) ? success : failure
-	console.log(char + ' ' + id)
-}
+console.log(tests.map(format).join('\n'))
