@@ -1,0 +1,18 @@
+{
+  "name": "equal",
+  "version": "0.1.0",
+  "description": "Determine if two values are deeply equivalent",
+  "keywords": [
+		"deep",
+		"equal",
+		"equals",
+		"equality"
+	],
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Brandon Semilla (https://github.com/semibran)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/semibran/equal.git"
+  }
+}
