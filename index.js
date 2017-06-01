@@ -38,4 +38,5 @@ module.exports = function equal(a, b) {
 		}
 		return true
 	}
+	return false
 }

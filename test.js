@@ -7,6 +7,10 @@ var tests = {
 		expect: true,
 		actual: equal(0, 0)
 	},
+	'strings': {
+		expect: false,
+		actual: equal('hello', 'world')
+	},
 	'NaN': {
 		expect: true,
 		actual: equal(NaN, NaN)
