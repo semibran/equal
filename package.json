@@ -1,6 +1,6 @@
 {
  "name": "equivalence",
- "version": "0.1.0",
+ "version": "0.1.1",
  "description": "Determine if two values are deeply equivalent",
  "keywords": [
   "deep",
@@ -19,6 +19,6 @@
   "test": "node test"
  },
  "devDependencies": {
-  "test-format": "^0.1.0"
+  "test-format": "^0.1.1"
  }
 }
